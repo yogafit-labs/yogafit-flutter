@@ -1,0 +1,6 @@
+framework module Pods_yogafit_yogafitUITests {
+  umbrella header "Pods-yogafit-yogafitUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
