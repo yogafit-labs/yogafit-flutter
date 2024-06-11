@@ -1,6 +1,0 @@
-framework module Pods_yogafitTests {
-  umbrella header "Pods-yogafitTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
