@@ -11,14 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  table_calendar: ^3.1.2
   provider: ^6.0.0
-  import_sorter: ^4.6.0
+  table_calendar: ^3.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^3.0.0
 
 flutter:
