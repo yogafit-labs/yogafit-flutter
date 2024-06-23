@@ -37,6 +37,9 @@ class CalendarState extends State<Calendar> {
           _focusedDay = focusedDay;
         });
       },
+      headerStyle: const HeaderStyle(
+        formatButtonVisible: false,
+      ),
     );
   }
 }
