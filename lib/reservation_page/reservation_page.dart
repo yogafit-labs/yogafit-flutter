@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'widgets/calendar.dart';
+import 'package:yogafit/common/calendar.dart';
 import 'widgets/lecture_list.dart';
 
 class ReservationPage extends StatefulWidget {
@@ -32,53 +31,13 @@ class _ReservationPageState extends State<ReservationPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(toolbarHeight: 0),
-      body: Column(
-        children: [
-          const Calendar(),
-          LectureList(
-            lectures: exampleLectures,
-          ),
-        ],
-      ),
-      bottomNavigationBar: const _BottomNavigationBar(),
-    );
-  }
-}
-
-class _BottomNavigationBar extends StatefulWidget {
-  const _BottomNavigationBar();
-
-  @override
-  createState() => _BottomNavigationBarState();
-}
-
-class _BottomNavigationBarState extends State<_BottomNavigationBar> {
-  int _currentIndex = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.people),
-          label: 'Social',
+    return Column(
+      children: [
+        const Calendar(),
+        LectureList(
+          lectures: exampleLectures,
         ),
       ],
-      currentIndex: _currentIndex,
-      selectedItemColor: Colors.amber[800],
-      onTap: _onTab,
     );
-  }
-
-  void _onTab(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
   }
 }
